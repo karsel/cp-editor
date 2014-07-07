@@ -1,0 +1,152 @@
+/*  Стили для статей */
+
+.post {
+    font-family: "PT Sans", "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    line-height: 140%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+
+}
+.post.grid {
+    background: url(/public/img/848-4-30.png) repeat-y center top;
+    min-height: auto;
+    max-width: 848px;
+    min-width: 848px;
+}
+
+.post p {
+    margin-bottom: 20px;
+}
+
+.post.grid h1,
+.post.grid h2,
+.post.grid h3,
+.post.grid h4,
+.post.grid h5,
+.post.grid h6,
+.post.grid p
+{
+    background: rgba(255,255,255,0.5);
+
+}
+
+.post a {
+    color: #2980b9;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #262626;
+    border: 1px solid transparent;
+
+}
+.post div {
+
+}
+.post img {
+
+    margin-bottom: 10px;
+}
+
+.post blockquote {}
+
+/* Заголовки */
+.post h1 {
+    border: 1px solid transparent;
+    font-weight: normal;
+    line-height: 1.3;
+    font-family: Georgia, serif;
+
+}
+.post h2 {}
+.post h3 {}
+.post h4 {}
+.post h5 {}
+.post h6 {}
+
+.post > .row {
+    border: 1px solid transparent;
+    /* background: rgba(255, 255, 255, 1); */
+}
+.post > .row > div h1,
+.post > .row > div h2,
+.post > .row > div h3,
+.post > .row > div h4,
+.post > .row > div h5,
+.post > .row > div h6 {
+    margin-top: 0px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.post small {}
+.post strong {}
+.post em {}
+
+
+.post .list{
+
+    margin-bottom: 5px;
+}
+.post .list:before {
+    content: "\2022\0020";
+}
+.post .text-left {}
+.post .text-center {}
+.post .text-right {}
+.post .text-justify {}
+
+.post .blockquote {
+    padding: 10px;
+    border-left: 5px solid #f5f5f5;
+}
+
+.post .row {
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post .post-info {
+    font-size: 13px;
+    padding: 5px;
+}
+.post .post-info > span {
+    margin-right: 10px;
+}
+
+.post .post-info > .post-read-more {
+    display: block;
+    text-align: right;
+
+}
+
+.post .field-tags {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.post .field-tags li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.post .post-info > .post-comments {
+    display: inline-block;
+
+
+}
+
+.post .field-tags li:not(:first-child):before {
+    content: ", ";
+}
+
+.post .post-info a {
+    color: #9248AF;
+}
+
+.post .text-center img {
+    margin: 0 auto;
+}

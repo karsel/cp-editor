@@ -1,0 +1,134 @@
+/* Блок редактора */
+#editor {
+    max-width: 848px;
+    min-width: 848px;
+}
+
+/* При наведение подкладываем сетку */
+#editor.grid {
+    background: url(img/848-4-30.png) repeat-y center top;
+    min-height: auto;
+}
+
+/* Определяем стиль для тегов в редакторе */
+#editor h1, h2, h3, h4, h5 , h6 , p
+{
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+#editor.grid h1,
+#editor.grid h2,
+#editor.grid h3,
+#editor.grid h4,
+#editor.grid h5,
+#editor.grid h6,
+#editor.grid p
+{
+    background: rgba(255,255,255,0.5);
+}
+
+#editor .row:hover {
+
+}
+
+#editor.grid div.row {
+
+    border: 1px dotted #cccccc;
+}
+#editor.grid div.row.active {
+    border-top: 1px solid #D35400;
+    border-bottom: 1px solid #D35400;
+}
+
+/* Фокус на редактируемом элементе */
+#editor [contenteditable="true"]:active,
+#editor [contenteditable="true"]:focus {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    outline:none;
+
+}
+
+
+/* Фокус на редактируемом элементе */
+#editor.grid [contenteditable="true"]:active,
+#editor.grid [contenteditable="true"]:focus {
+    border-top: 1px solid #ACCCF2;
+    border-bottom: 1px solid #ACCCF2;
+    outline:none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Выбранный элемент */
+#editor.grid .select {
+    border-top: 1px solid #ACCCF2;
+    border-bottom: 1px solid #ACCCF2;
+    outline:none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+#editor.grid [contenteditable="true"]:empty:before {
+    color: #ccc;
+    content:"Пустая строка";
+}
+
+#cp-images-upload .btn {
+    border-bottom: none;
+}
+#cp-images-upload .views {
+    display: block;
+    height: 140px;
+    border: 1px solid #cccccc;
+    overflow-y: scroll;
+}
+.views .img {
+    display: inline-block;
+    margin: 5px;
+
+
+}
+
+#editor .delete {
+
+    display: none;
+}
+#editor.grid .delete {
+    font-size: 11px;
+    padding: 3px;
+    display: inline-block;
+    height: 28px;
+    position: relative;
+    margin-top: -38px;
+    float: right;
+    color: #D35400;
+    content:"X";
+    border: 1px solid #D35400;
+    background-color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}
+
+#editor .cut {
+    position: relative;
+    height: 1px;
+    border-top: 1px solid #9B569B;
+    margin-left: -20px;
+    margin-bottom: 10px;
+
+
+}
+
+#editor .cut-btn {
+    font-size: 11px;
+    padding: 3px;
+    display: inline-block;
+    height: 28px;
+    position: relative;
+    margin-left: -29px;
+    margin-top: -15px;
+    color: #D35400;
+
+    border: 1px solid  #9B569B;
+    background-color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}

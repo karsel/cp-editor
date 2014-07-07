@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>cp-ditor - WYSIWYNG редактор</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -15,13 +16,86 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 
+    <!-- Подключаем стили для статьи  --->
+    <link href="post.css" rel="stylesheet">
+
+    <!-- Подключаем стили редактора --->
+    <link href="cp-editor.css" rel="stylesheet">
+
+    <!-- Подключаем JavaScript редактора --->
+    <script src="cp-editor.js"></script>
+
 
 </head>
 <body>
 <div class="container">
-    <div class="editor">
+    <div class="row" >
 
+        <div class="col-lg-9 ">
+
+            <div id="editor" class="post grid">
+
+            <span>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 contenteditable="true" class="edit" id="title">WYSIWYG редактор</h1>
+                    </div>
+                </div>
+            </span>
+            <span id="annonce">
+                <div class="row" >
+                    <div class="col-lg-12">
+                        <p contenteditable="true" class="edit" >WYSIWYG (произносится [ˈwɪziwɪɡ], является аббревиатурой от англ. What You See Is What You Get,
+                            «что видишь, то и получишь») — свойство прикладных программ или веб-интерфейсов, в которых содержание отображается в
+                            процессе редактирования и выглядит максимально близко похожим на конечную продукцию, которая может быть печатным
+                            документом, веб-страницей или презентацией. В настоящее время для подобных программ также широко используется понятие «визуальный редактор».</p>
+                    </div>
+                </div>
+            </span>
+
+            <span id="content">
+
+                 <div class="row">
+                     <div class="col-lg-12">
+                         <img src="uploads/horse.jpg" class="img img-responsive" />
+                     </div>
+                 </div>
+
+                 <div class="row">
+                     <div class="col-lg-3">
+                         <p contenteditable="true" class="edit" >Всем знакомо выделение элементов на странице</p>
+                     </div>
+                     <div class="col-lg-3">
+                         <p contenteditable="true" class="edit" >Всем знакомо выделение элементов на странице</p>
+                     </div>
+                     <div class="col-lg-3">
+                         <p contenteditable="true" class="edit" >Всем знакомо выделение элементов на странице</p>
+                     </div>
+                     <div class="col-lg-3">
+                         <p contenteditable="true" class="edit" >Всем знакомо выделение элементов на странице</p>
+                     </div>
+                 </div>
+
+                 <div class="row">
+                     <div class="col-lg-12">
+                         <p contenteditable="true" class="edit" ></p>
+                     </div>
+                 </div>
+
+            </span>
+        </div>
+            </div>
+        </div>
     </div>
-</div>
+
+    <script>
+        <script>
+
+        $(document).ready(function() {
+
+            var editor = $("#editor").CpEditor();
+
+        });
+    </script>
 </body>
 </html>
